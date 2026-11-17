@@ -504,8 +504,27 @@ function redesenharAvatares() {
     document.querySelectorAll(".avatar-menu").forEach(el => el.replaceWith(criarAvatar()));
 }
 
+function montarBotaoTemaVisitante() {
+    const ul = document.querySelector("header ul");
+    if (!ul || document.getElementById("btn-tema")) return;
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button";
+    b.id = "btn-tema";
+    const atualizar = () => {
+        b.textContent = window.temaAtual && window.temaAtual() === "escuro" ? "☀" : "☾";
+        b.title = window.rotuloTema ? window.rotuloTema() : "Alternar tema";
+        b.setAttribute("aria-label", b.title);
+    };
+    b.addEventListener("click", () => { if (window.alternarTema) { window.alternarTema(); atualizar(); } });
+    atualizar();
+    li.appendChild(b);
+    const liLogin = document.getElementById("login") ? document.getElementById("login").closest("li") : null;
+    if (liLogin) ul.insertBefore(li, liLogin); else ul.appendChild(li);
+}
+
 function montarAvatarNoMenu() {
-    if (!estaLogado()) return;
+    if (!estaLogado()) { montarBotaoTemaVisitante(); return; }
     const header = document.querySelector("header");
     if (!header) return;
 

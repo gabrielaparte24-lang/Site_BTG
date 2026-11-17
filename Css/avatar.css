@@ -82,3 +82,17 @@ header ul li.menu-avatar-li{
     color: #fff;
     margin-bottom: 6px;
 }
+
+#btn-tema{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+}
+#btn-tema:hover{ background: rgba(255,255,255,0.18); }
