@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil</title>
+    <link rel="shortcut icon" href="../_Imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/perfil.css">
+    <link rel="stylesheet" href="../Css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/padrao.css">
+    <link rel="stylesheet" href="../Css/tema.css">
+    <script src="../Js/tema.js"></script>
+</head>
+<body>
+    <header>
+        <a href="logado.html" class="logo">
+            <img src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+        </a>
+        <ul>
+            <li><a href="logado.html" class="nav-txt">Home</a></li>
+            <li><a href="logado.html#banner" class="nav-txt">Promoções</a></li>
+            <li><a href="cardapio.html" class="nav-txt">Cardapio</a></li>
+            <li><a href="pedidos.html" class="nav-txt">Pedidos</a></li>
+        </ul>
+        <div id="slot-avatar" class="slot-avatar"></div>
+    </header>
+
+    <section id="corpo">
+        <form id="formulario-perfil">
+            <div id="avatar">👤</div>
+            <input type="file" id="perfil-foto" accept="image/*" hidden>
+            <button id="btn-foto" type="button">Alterar foto</button>
+            <h2 id="titulo-perfil">Meu Perfil</h2>
+
+            <label for="perfil-nome">Nome</label>
+            <input type="text" id="perfil-nome" data-mascara="nome" placeholder="Seu nome" maxlength="60" required>
+
+            <label for="perfil-email">Email</label>
+            <input type="text" id="perfil-email" placeholder="seuemail@exemplo.com" readonly>
+
+            <label for="perfil-telefone">Telefone</label>
+            <input type="text" id="perfil-telefone" data-mascara="telefone" placeholder="(31) 99999-9999" maxlength="15" inputmode="numeric">
+
+            <button id="salvar" type="submit">Salvar alterações</button>
+            <a href="enderecos.html" id="link-enderecos">Meus endereços</a>
+            <a href="#" id="sair">Deslogar</a>
+        </form>
+    </section>
+
+    <footer class="pe">
+        <h4>Boteco do Gui© Todos os direitos reservados.</h4>
+        <ul>
+            <li><a href="logado.html">HOME</a></li>
+            <li><a href="logado.html#banner">PROMOÇÕES</a></li>
+            <li><a href="cardapio.html">CARDÁPIO</a></li>
+        </ul>
+        <img class="logo-rodape" src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+    </footer>
+    <script src="../Js/script.js"></script>
+</body>
+</html>

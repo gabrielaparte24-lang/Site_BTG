@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/cadastro.css">
+    <link rel="stylesheet" href="../Css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../_Imgs/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../Css/padrao.css">
+    <link rel="stylesheet" href="../Css/tema.css">
+    <script src="../Js/tema.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../_Imgs/logo.png" alt="">
+        <ul>
+            <li><a href="../index.html" class="nav-txt">Home</a></li>
+            <li ><a href="../index.html#banner" class="nav-txt">Promoções</a></li>
+            <li><a href="cardapio.html" class="nav-txt">Cardapio</a></li>
+            <li><button id="login" >Login</button></li>
+        </ul>
+    </header>
+    <section id="corpo">
+    <form id="formulario-cad" novalidate>
+        <label for="nome-cad">Nome completo</label>
+        <input type="text" id="nome-cad" data-mascara="nome" maxlength="60" placeholder="Seu nome" autocomplete="name" required>
+        <label for="email-cad">Digite seu Email</label>
+        <input type="text" id="email-cad" data-mascara="email" maxlength="100" placeholder="seuemail@exemplo.com" inputmode="email" autocomplete="email" required>
+        <label for="telefone-cad">Telefone</label>
+        <input type="text" id="telefone-cad" data-mascara="telefone" maxlength="15" placeholder="(31) 99999-9999" inputmode="numeric" autocomplete="tel" required>
+        <label for="senha-cad">Digite sua Senha</label>
+        <input type="password" id="senha-cad" minlength="6" maxlength="30" placeholder="6 a 30 caracteres" autocomplete="new-password" required>
+        <label for="senha-rep">Digite novamente Senha</label>
+        <input type="password" id="senha-rep" minlength="6" maxlength="30" autocomplete="new-password" required>
+        <button id="Cadastro" type="submit">Cadastrar</button>
+    </form>
+    </section>
+    <footer class="pe">
+        <h4>Boteco do Gui© Todos os direitos reservados.</h4>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#banner">PROMOÇÕES</a></li>
+            <li><a href="cardapio.html">CARDÁPIO</a></li>
+        </ul>
+        
+            
+        <img class="logo-rodape" src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+    </footer>
+    <script src="../Js/script.js"></script>
+</body>
+</html>

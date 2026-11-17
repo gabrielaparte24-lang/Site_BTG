@@ -1,0 +1,39 @@
+html[data-tema="escuro"]{ color-scheme: dark; background-color: #15100c; }
+html[data-tema="escuro"] body{ background-color: #15100c; color: #f1e8dc; }
+
+html[data-tema="escuro"] header,
+html[data-tema="escuro"] .pe,
+html[data-tema="escuro"] #formulario-cad,
+html[data-tema="escuro"] #formulario,
+html[data-tema="escuro"] #formulario-perfil{ background-color: #8a4100; }
+
+html[data-tema="escuro"] #loc-history{ background-color: #4a3900; }
+html[data-tema="escuro"] #loc-history h1,
+html[data-tema="escuro"] #loc-history h2{ color: #f6ecd2; }
+html[data-tema="escuro"] #foto-lugar h1,
+html[data-tema="escuro"] #foto-lugar h2{ color: #f1e8dc; }
+
+html[data-tema="escuro"] #cardapio .filtros{ background-color: #8a4100; }
+html[data-tema="escuro"] #cardapio #busca-cardapio{ background-color: #2a211b; color: #f1e8dc; border-color: #000; }
+html[data-tema="escuro"] #cardapio #busca-cardapio::placeholder{ color: #a99a8a; }
+html[data-tema="escuro"] #cardapio .chip-cat{ background-color: #2a211b; color: #f1e8dc; border-color: #000; }
+html[data-tema="escuro"] #cardapio .chip-cat.ativo{ background-color: #15100c; color: #ffb066; }
+html[data-tema="escuro"] #cardapio .cat-vazio,
+html[data-tema="escuro"] #cardapio #sem-resultado{ color: #f1e8dc; }
+html[data-tema="escuro"] #carrinho,
+html[data-tema="escuro"] #painel-pedidos{ background-color: #3a3333; }
+
+html[data-tema="escuro"] input[type="text"],
+html[data-tema="escuro"] input[type="password"],
+html[data-tema="escuro"] input[type="email"],
+html[data-tema="escuro"] select{ background-color: #2a211b; color: #f1e8dc; border-color: #000; }
+html[data-tema="escuro"] input::placeholder{ color: #a99a8a; }
+html[data-tema="escuro"] #perfil-email{ background-color: #1d1712; color: #a99a8a; }
+html[data-tema="escuro"] .cartao,
+html[data-tema="escuro"] .end-card{ background-color: #2a211b; color: #f1e8dc; }
+html[data-tema="escuro"] .avatar-drop a{ background-color: #2a211b; color: #ffb066; }
+html[data-tema="escuro"] .avatar-drop a:hover{ background-color: #3a2c20; }
+html[data-tema="escuro"] #formulario a,
+html[data-tema="escuro"] #formulario-perfil #sair{ color: #ffd9b0; }
+html[data-tema="escuro"] #mapa a{ color: #ffd9b0; }
+html[data-tema="escuro"] #cardapio .cat-titulo{ color: #ffb066; }

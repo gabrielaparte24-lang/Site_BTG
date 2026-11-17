@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="../Css/cardapio.css">
+    <link rel="stylesheet" href="../Css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../_Imgs/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../Css/padrao.css">
+    <link rel="stylesheet" href="../Css/tema.css">
+    <script src="../Js/tema.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../_Imgs/logo.png" alt="">
+        <ul>
+            <li><a href="../index.html" class="nav-txt">Home</a></li>
+            <li ><a href="../index.html#banner" class="nav-txt">Promoções</a></li>
+            <li><a href="cardapio.html" class="nav-txt">Cardapio</a></li>
+            <li><button id="login" >Login</button></li>
+        </ul>
+    </header>
+    <section id="corpo">
+        <div id="cardapio">
+            <div class="filtros">
+                <input type="search" id="busca-cardapio" placeholder="Pesquisar no cardápio..." autocomplete="off" aria-label="Pesquisar no cardápio">
+                <div class="chips">
+                    <button type="button" class="chip-cat ativo" data-cat="todos">Todos</button>
+                    <button type="button" class="chip-cat" data-cat="petiscos">Petiscos</button>
+                    <button type="button" class="chip-cat" data-cat="pratos">Pratos</button>
+                    <button type="button" class="chip-cat" data-cat="bebidas">Bebidas</button>
+                </div>
+            </div>
+
+            <section class="cat" data-cat="petiscos" data-rotulo="Petiscos">
+                <h2 class="cat-titulo">Petiscos</h2>
+                <div class="cat-itens">
+                    <div class="cad_it"><div class = "img_prod" id="img-1"></div><div class="bt-name-prec"><h1>Mandioca com carne seca -- R$ 42.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-2"></div><div class="bt-name-prec"><h1>Torresmo crocante -- R$34.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-3"></div><div class="bt-name-prec"><h1>Calabresa acebolada -- R$36.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-4"></div><div class="bt-name-prec"><h1>Bolinho de Costela -- R$40.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-5"></div><div class="bt-name-prec"><h1>Frango a passarinho -- R$39.00</h1><button >Add</button></div></div>
+                </div>
+            </section>
+
+            <section class="cat" data-cat="pratos" data-rotulo="Pratos">
+                <h2 class="cat-titulo">Pratos</h2>
+                <div class="cat-itens">
+                    <div class="cad_it"><div class = "img_prod" id="img-10" data-nome="Feijoada completa" data-foto="../_Imgs/Feijoada completa.webp"></div><div class="bt-name-prec"><h1>Feijoada completa -- R$58.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-11" data-nome="Parmegiana de frango" data-foto="../_Imgs/Parmegiana de frango.webp"></div><div class="bt-name-prec"><h1>Parmegiana de frango -- R$49.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-12" data-nome="Tutu à mineira" data-foto="../_Imgs/Tutu à mineira.webp"></div><div class="bt-name-prec"><h1>Tutu à mineira -- R$52.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-13" data-nome="Picanha na chapa" data-foto="../_Imgs/Picanha na chapa.webp"></div><div class="bt-name-prec"><h1>Picanha na chapa -- R$79.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-14" data-nome="Feijão tropeiro" data-foto="../_Imgs/Feijão tropeiro.webp"></div><div class="bt-name-prec"><h1>Feijão tropeiro -- R$46.00</h1><button >Add</button></div></div>
+                </div>
+            </section>
+
+            <section class="cat" data-cat="bebidas" data-rotulo="Bebidas">
+                <h2 class="cat-titulo">Bebidas</h2>
+                <div class="cat-itens">
+                    <div class="cad_it"><div class = "img_prod" id="img-6"></div><div class="bt-name-prec"><h1>Chopp pilsen 300 ml -- R$9.50</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-7"></div><div class="bt-name-prec"><h1>Cerveja long neck -- R$12.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-8"></div><div class="bt-name-prec"><h1>Caipirinha de limão -- R$18.00</h1><button >Add</button></div></div>
+                    <div class="cad_it"><div class = "img_prod" id="img-9"></div><div class="bt-name-prec"><h1>Refrigerante lata -- R$6.00</h1><button >Add</button></div></div>
+                </div>
+            </section>
+
+            <p id="sem-resultado" class="oculto">Nenhum item encontrado.</p>
+        </div>
+        <div id="carrinho">
+            <ul id="car">
+                <li id="Titul">Poduto ------------ Preço</li>
+            </ul>
+            <div id="Preço-e-Compra">
+                <h2>Preço R$<span id="Total"> 0.00</span></h2>
+                <button>Comprar</button>
+            </div>  
+        </div>
+    </section>
+    <footer class="pe">
+        <h4>Boteco do Gui© Todos os direitos reservados.</h4>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#banner">PROMOÇÕES</a></li>
+            <li><a href="cardapio.html">CARDÁPIO</a></li>
+        </ul>
+        
+            
+        <img class="logo-rodape" src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+    </footer>
+    <script src="../Js/script.js"></script>
+</body>
+</html>

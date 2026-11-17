@@ -1,0 +1,108 @@
+html{ overflow-x: hidden; }
+img{ max-width: 100%; }
+
+header ul{ width: auto; max-width: 100%; }
+@media (max-width: 1500px){
+    header img{ margin-left: clamp(12px, 3vw, 60px); }
+    header ul li{
+        margin-right: clamp(14px, 2.6vw, 45px);
+        font-size: clamp(16px, 1.7vw, 25px);
+    }
+    header ul #login{
+        margin-left: clamp(20px, 7vw, 120px);
+        width: clamp(90px, 9vw, 150px);
+        font-size: clamp(14px, 1.4vw, 21px);
+    }
+    header ul li.menu-avatar-li{ margin-left: clamp(16px, 3vw, 60px); }
+    .slot-avatar{ margin-right: clamp(12px, 3vw, 50px); }
+}
+
+.pe{ flex-wrap: wrap; }
+.pe ul{ margin: auto 0 auto min(1200px, calc(100% - 330px)); }
+
+#corpo #banner{ width: min(1500px, 100%); }
+#corpo #banner #img-banner{ width: min(1450px, 96%); }
+#corpo #banner #Preview-Carocel{ width: min(800px, 90%); }
+
+#loc-history{
+    width: 100%;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+#loc-history h2{ width: min(900px, 96%); }
+
+#foto-lugar{ width: 100%; height: auto; padding-bottom: 60px; box-sizing: border-box; }
+#foto-lugar #foto1{ width: min(850px, 44%); height: auto; aspect-ratio: 850 / 600; right: 0; }
+#foto-lugar #foto2{ width: min(900px, 46%); height: auto; aspect-ratio: 3 / 2; right: 0; }
+
+#corpo:has(> #cardapio){
+    width: 100%;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+#corpo:has(> #cardapio) #cardapio{ width: auto; margin-left: 4%; margin-right: 0; }
+#corpo:has(> #cardapio) #carrinho{ width: min(575px, 94%); }
+#corpo:has(> #cardapio) #carrinho #Preço-e-Compra{ width: 100%; box-sizing: border-box; }
+#corpo:has(> #cardapio) #carrinho #Preço-e-Compra button{ width: auto; padding: 0 18px; }
+#corpo:has(> #cardapio) #carrinho #car{ height: 500px; }
+.end-carrinho{ padding: 0 22px 12px; }
+
+@media (max-width: 900px){
+    #loc-history{
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "titulo" "mapa" "texto";
+    }
+    #loc-history #mapa{ height: 380px; margin: 20px 0; }
+    #loc-history h2{ width: 100%; top: 0; }
+    #foto-lugar #foto1, #foto-lugar #foto2{ width: 92%; right: 0; top: 0; }
+}
+
+footer.pe .logo-rodape{
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+    align-self: center;
+    flex: 0 0 auto;
+    margin: 0 60px 0 0;
+}
+@media (min-width: 901px){
+    footer.pe{ flex-wrap: nowrap; }
+    footer.pe h4{ flex: 0 1 auto; }
+    footer.pe ul{ margin: auto 50px auto auto; flex: 0 0 auto; }
+}
+@media (max-width: 900px){
+    footer.pe{ height: auto; min-height: 200px; padding: 20px 0; justify-content: center; }
+    footer.pe h4{ margin: 10px 20px; flex: 1 1 100%; text-align: center; }
+    footer.pe ul{ margin: 10px 30px; }
+    footer.pe .logo-rodape{ margin: 10px 30px; }
+}
+
+@media (max-width: 900px){
+    #corpo:has(> #cardapio){
+        height: auto;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "cardapio" "carrinho";
+    }
+    #corpo:has(> #cardapio) #cardapio{
+        height: auto;
+        max-height: none;
+        margin: 30px 4% 0;
+        overflow: visible;
+        justify-content: center;
+    }
+    #corpo:has(> #cardapio) #cardapio .cad_it{
+        width: 100%;
+        max-width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #corpo:has(> #cardapio) #cardapio .cad_it .img_prod{ width: 100%; box-sizing: border-box; }
+    #corpo:has(> #cardapio) #cardapio .cat-itens{ justify-content: center; }
+    #corpo:has(> #cardapio) #carrinho{ margin: 30px auto; width: 92%; height: auto; padding-bottom: 20px; box-sizing: border-box; }
+    #cardapio .filtros{ position: static; }
+}
+

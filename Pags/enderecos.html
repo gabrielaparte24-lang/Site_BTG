@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus endereços</title>
+    <link rel="shortcut icon" href="../_Imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/perfil.css">
+    <link rel="stylesheet" href="../Css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/padrao.css">
+    <link rel="stylesheet" href="../Css/tema.css">
+    <script src="../Js/tema.js"></script>
+</head>
+<body>
+    <header>
+        <a href="logado.html" class="logo">
+            <img src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+        </a>
+        <ul>
+            <li><a href="logado.html" class="nav-txt">Home</a></li>
+            <li><a href="logado.html#banner" class="nav-txt">Promoções</a></li>
+            <li><a href="cardapio.html" class="nav-txt">Cardapio</a></li>
+            <li><a href="pedidos.html" class="nav-txt">Pedidos</a></li>
+        </ul>
+        <div id="slot-avatar" class="slot-avatar"></div>
+    </header>
+
+    <section id="corpo">
+        <div class="cartao">
+            <h2>Meus endereços</h2>
+            <div id="lista-enderecos"></div>
+
+            <form id="form-endereco">
+                <h3>Novo endereço</h3>
+                <input type="text" id="end-logradouro" placeholder="Rua / Avenida" maxlength="160" required>
+                <input type="text" id="end-numero" data-mascara="numero" placeholder="Número" maxlength="6" inputmode="numeric" required>
+                <input type="text" id="end-bairro" placeholder="Bairro" maxlength="100" required>
+                <input type="text" id="end-cep" data-mascara="cep" placeholder="CEP (00000-000)" maxlength="9" inputmode="numeric" required>
+                <button type="submit">Salvar endereço</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="pe">
+        <h4>Boteco do Gui© Todos os direitos reservados.</h4>
+        <ul>
+            <li><a href="logado.html">HOME</a></li>
+            <li><a href="logado.html#banner">PROMOÇÕES</a></li>
+            <li><a href="cardapio.html">CARDÁPIO</a></li>
+        </ul>
+        <img class="logo-rodape" src="../_Imgs/logo.png" alt="Logo Boteco do Gui">
+    </footer>
+    <script src="../Js/script.js"></script>
+</body>
+</html>

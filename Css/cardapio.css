@@ -1,0 +1,395 @@
+.montserrat-uniquifier {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+
+header{
+    background-color: #c55c00;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: black 2px solid;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    img{
+        margin-left: 50px;
+        height: 100px;
+        width: 100px;
+    }
+    ul{
+        height: 80px;
+        width: 550px;
+        margin: auto;
+        display: flex;
+        list-style-type: none;
+        li{
+            margin-right: 100px;
+            transition: transform 0.8s ;
+            margin-top: 15px;
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            font-size: 25px;
+            .nav-txt{
+                position: relative;
+                top: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            .nav-txt:hover{
+                
+            text-decoration:underline;
+            }
+        }
+        #login{
+            font-size: 21px;
+            width: 150px;
+            height: 45px;
+            border-radius: 20px;
+            border: 3px solid rgb(255, 255, 255) ;
+            margin-bottom: auto;
+            margin-left: 300px;
+        }
+        
+    }}
+body{margin: 0;}
+#corpo{
+    margin: auto;
+    display: grid;
+    width: 1900px;
+    height: 800px;
+    grid-template-columns: repeat(6,315px);
+    grid-template-rows: repeat(6,200px);
+    grid-template-areas: "cardapio cardapio cardapio cardapio carrinho carrinho"
+    "cardapio cardapio cardapio cardapio carrinho carrinho"
+    "cardapio cardapio cardapio cardapio carrinho carrinho"
+    "cardapio cardapio cardapio cardapio carrinho carrinho"
+    "cardapio cardapio cardapio cardapio carrinho carrinho"
+    "vazio vazio vazio vazio vazio vazio"
+    ;
+    
+}
+#cardapio{
+        grid-area: cardapio;
+        width: 1200px;
+        height: 700px;
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 50px;
+        margin-left:75px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .cad_it{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            height: 280px;
+            width: 340px;
+            background-color: rgb(92, 63, 0);
+            .img_prod{
+               height: 220px;
+                width: 338px;
+                
+                border-radius: 20px;
+                border: black solid 1px;
+                background-color: aliceblue;
+                z-index: 10;
+                
+            }
+            .bt-name-prec{
+            display: flex;
+            h1{
+                color: white;
+                margin: auto;
+                font-size: 15px;
+                font-weight: 750;
+                font-family: "Redaction 10", serif;
+                position: relative;
+                top: 10px;
+            }
+            button{
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                border-radius: 50px;
+                height: 40px;
+                width: 50px;
+                position: relative;
+                top: 10px;
+                margin-right: 10px;
+                
+            }
+            }
+            
+            
+        }
+    }
+    #carrinho{
+        
+        height: 700px;
+        grid-area: carrinho;
+        border: black solid 1px;
+        margin-top: 50px;
+        width: 575px;
+        
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #7a6f6f;
+        
+        #Preço-e-Compra{
+            display: flex;
+            text-align: center;
+            height: 70px;
+            width: 575px;
+            
+            background-color: rgb(43, 1, 1);
+            z-index: 10;
+            border-radius: 50px;
+            border: black solid 1px;
+            margin: auto;
+            h2{
+                margin: auto;
+                color: white;
+            }
+            button{
+                border-radius: 50px;
+                height: 50px;
+                width: 150px;
+                margin: auto;
+            }
+        }
+       
+    }
+
+    .pe{
+     color: black;
+     background-color: #c55c00;
+     height: 200px;
+     display: flex;
+     ul{
+       margin:auto 0px auto 1200px;
+       list-style: disc;;
+       li{
+           font-family: "Montserrat", sans-serif;
+           margin-bottom: 5px;
+           font-size: 18px;
+           color: white;
+           text-decoration: none;
+           a{
+            color: white;
+            text-decoration: none;
+           }
+
+       }
+    }
+     h4{
+        color: white;
+        margin: 155px 0px 0px 75px ;
+        font-size: 20px;
+     }
+}
+html{
+    scrollbar-color: rgba(0, 0, 0, 0.392) hsla(0, 0%, 100%, 0);
+}
+#car{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.it-car{
+text-align: center;
+   font-size: 30px;
+
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    justify-content: space-between;
+    button{
+        border-radius: 50px;
+        background-color: hsl(0, 0%, 100%);
+        color:black
+    }
+    
+}
+#Titul{
+    text-align: center;
+   font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border: black 2px solid;
+    border-radius: 50px;
+}
+#img-1{
+    background-image: url(../_Imgs/Mandioca\ com\ carne\ seca.webp);
+    background-size: cover;
+}
+#img-2{
+    background-image: url(../_Imgs/Torresmo\ crocante.webp);
+    background-size: cover;
+}
+#img-3{
+    background-image: url(../_Imgs/Calabresa\ acebolada.webp);
+    background-size: cover;
+}
+#img-4{
+    background-image: url(../_Imgs/Bolinho\ de\ costela.webp);
+    background-size:cover;
+    background-position-x:left;
+}
+#img-5{
+    background-image: url(../_Imgs/Frango\ a\ passarinho.webp);
+    background-size: cover;
+}
+#img-6{
+    background-image: url(../_Imgs/Chopp\ pilsen\ 300\ ml.webp);
+    background-size: cover;
+}
+#img-7{
+    background-image: url(../_Imgs/Cerveja\ long\ neck.webp);
+    background-size: cover;
+}
+#img-8{
+    background-image: url(../_Imgs/Caipirinha\ de\ limão.webp);
+    background-size: cover;
+}
+#img-9{
+    background-image: url(../_Imgs/refri\ lata.webp);
+    background-size: cover;
+}
+
+    
+
+#cardapio .filtros{
+    flex: 0 0 100%;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    background-color: #c55c00;
+    border: 3px solid #000;
+    border-radius: 40px;
+}
+#cardapio #busca-cardapio{
+    width: min(420px, 100%);
+    height: 42px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+}
+#cardapio #busca-cardapio::placeholder{ color: #777; }
+#cardapio #busca-cardapio:focus{ box-shadow: 0 0 0 3px rgb(43, 1, 1); }
+#cardapio .chips{ display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+#cardapio .chip-cat{
+    height: 38px;
+    padding: 0 24px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#cardapio .chip-cat:hover{ background-color: #ffe6d1; }
+#cardapio .chip-cat.ativo{ background-color: rgb(43, 1, 1); color: #ffffff; }
+
+#cardapio .cat{ flex: 0 0 100%; width: 100%; }
+#cardapio .cat-titulo{
+    margin: 10px 0 18px;
+    font-family: "Koulen", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(92, 63, 0);
+    border-bottom: 3px solid #c55c00;
+    width: max-content;
+    max-width: 100%;
+}
+#cardapio .cat-itens{ display: flex; flex-wrap: wrap; }
+#cardapio .cat-vazio{ display: none; }
+#cardapio #sem-resultado{
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(92, 63, 0);
+}
+#cardapio .oculto, .oculto{ display: none !important; }
+
+#cardapio .img_prod.sem-foto{
+    background-image: linear-gradient(135deg, rgb(43, 1, 1), rgb(92, 63, 0));
+    background-color: rgb(43, 1, 1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: "Koulen", sans-serif;
+    font-size: 36px;
+}
+#cardapio .img_prod{ background-size: cover; background-position: center; }
+
+#carrinho{ position: relative; }
+#carrinho.bloqueado #car, #carrinho.bloqueado #Preço-e-Compra, #carrinho.bloqueado .end-carrinho{
+    opacity: 0.25;
+    pointer-events: none;
+    user-select: none;
+}
+#carrinho .aviso-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(360px, 82%);
+    box-sizing: border-box;
+    padding: 28px 24px;
+    border-radius: 30px;
+    border: 3px solid #c55c00;
+    background-color: rgb(43, 1, 1);
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 30;
+}
+#carrinho .aviso-login strong{ font-size: 22px; }
+#carrinho .aviso-login span{ font-size: 15px; line-height: 1.4; }
+#carrinho .aviso-login a{
+    display: block;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: #c55c00;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+#carrinho .aviso-login a.sec{ background-color: transparent; border: 2px solid #ffffff; padding: 8px 0; }
+#cardapio .cad_it button.desativado{ opacity: 0.45; cursor: not-allowed; }

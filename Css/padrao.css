@@ -1,0 +1,131 @@
+
+html{ scrollbar-color: rgba(0, 0, 0, 0.392) transparent; }
+body{ margin: 0; font-family: "Montserrat", sans-serif; }
+button, input, select, textarea{ font-family: inherit; }
+a{ font-family: inherit; }
+
+body > header:not(#_h){
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    background-color: #c55c00;
+    border-bottom: 2px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: "Montserrat", sans-serif;
+}
+body > header:not(#_h) > img,
+body > header:not(#_h) > .logo{ flex: 0 0 auto; align-self: flex-start; margin: 0 0 0 clamp(12px, 3vw, 50px); }
+body > header:not(#_h) > img{
+    margin: 0 0 0 clamp(12px, 3vw, 50px);
+}
+body > header:not(#_h) > img,
+body > header:not(#_h) > .logo img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+body > header:not(#_h) > .logo img{ margin: 0; }
+body > header:not(#_h) > ul{
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+body > header:not(#_h) > ul > li{
+    margin: 0 clamp(14px, 2.4vw, 45px) 0 0;
+    padding: 0;
+    font-size: clamp(16px, 1.7vw, 24px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+body > header:not(#_h) > ul > li:last-child{ margin-right: 0; }
+body > header:not(#_h) > ul > li .nav-txt,
+body > header:not(#_h) > ul > li > a{
+    position: static;
+    top: auto;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+body > header:not(#_h) > ul > li .nav-txt:hover{ text-decoration: underline; }
+body > header:not(#_h) ul #login{
+    margin: 0 0 0 clamp(10px, 2vw, 40px);
+    width: clamp(90px, 9vw, 130px);
+    height: 42px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    font-size: clamp(14px, 1.3vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+}
+body > header:not(#_h) .slot-avatar{ flex: 0 0 auto; margin: 0 clamp(12px, 3vw, 50px) 0 0; align-self: center; }
+
+body > footer.pe:not(#_f){
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: auto;
+    min-height: 200px;
+    padding: 24px clamp(20px, 5vw, 75px);
+    background-color: #c55c00;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+body > footer.pe:not(#_f) h4{
+    flex: 1 1 auto;
+    margin: 0;
+    align-self: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+}
+body > footer.pe:not(#_f) ul{
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+body > footer.pe:not(#_f) ul li{
+    margin: 0 0 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+body > footer.pe:not(#_f) ul li a{ color: #fff; text-decoration: none; }
+body > footer.pe:not(#_f) ul li a:hover{ text-decoration: underline; }
+body > footer.pe:not(#_f) .logo-rodape{
+    flex: 0 0 auto;
+    width: 130px;
+    height: 130px;
+    margin: 0;
+    object-fit: contain;
+}
+@media (max-width: 900px){
+    body > footer.pe:not(#_f){ flex-direction: column; justify-content: center; text-align: center; }
+    body > footer.pe:not(#_f) h4{ align-self: center; order: 3; }
+    body > footer.pe:not(#_f) ul{ padding: 0; list-style: none; }
+    body > header:not(#_h){ flex-wrap: wrap; height: auto; min-height: 80px; padding: 6px 0; }
+    body > header:not(#_h) > ul{ height: auto; flex-wrap: wrap; justify-content: center; margin: 0 auto; row-gap: 6px; }
+    body > header:not(#_h) > ul > li{ margin-right: 14px; }
+}
+
+#cardapio .cad_it .bt-name-prec h1,
+#cardapio .cad_it .bt-name-prec h1{ font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 14px; line-height: 1.25; }
+#Titul, #Preço-e-Compra h2, #cardapio #sem-resultado{ font-family: "Montserrat", sans-serif; }
+#Titul{ font-size: 24px; font-weight: 700; }
+.it-car{ font-family: "Montserrat", sans-serif; font-size: 18px; }
+#cardapio .cat-titulo{ font-family: "Koulen", "Montserrat", sans-serif; }
